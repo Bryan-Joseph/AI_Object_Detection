@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Webpage</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+
+<body class="addDelay">
+    <center>
+        <h2 class="bg-white borderR_20 shadow_10 py-3 px-4 mt-5 mb-4 fit_width">Object Detection Webapp</h2>
+
+        <p id="statusL" class="bg-white borderR_20 shadow_10 py-2 px-3 mt-4 font_25 font-weight-bold fit_width">Status -</p>
+        <a href="index.html" class="btn btn-danger font-weight-bold btn-lg borderR_10 float-right fixed_top_right_60_40 shadow_10">Back</a>
+
+        <p id="itemsDetectedL" class="bg-success borderR_20 px-3 py-2 mt-4 font_25 font-weight-bold fit_width text-white shadow_10"></p>
+        <div id="canvHolder" class="mt-5"></div>
+    </center>
+    <script src="items.js"></script>
+</body>
+
+</html>

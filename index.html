@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Webapp</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+
+<body class="h-100 m-0 p-0">
+    <center>
+        <h1 class="fit_width py-3 px-4 font-weight-bold bg-white borderR_20 shadow_10 mt-4">Object Detection Webapp</h1>
+        
+        <button onclick='sendData(6,"bedroom")' class="btn fit_width bg-white borderR_20 shadow_5 py-2 px-5 font-weight-bold font_20 mt-5 bgHover" style="width:300px !important;">Bed room</button><br>
+        <button onclick='sendData(3,"acSofa")' class="btn fit_width bg-white borderR_20 shadow_5 py-2 px-5 font-weight-bold font_20 mt-4 bgHover" style="width:300px !important;">AC and Sofa</button><br>
+        <button onclick='sendData(5,"desk")' class="btn fit_width bg-white borderR_20 shadow_5 py-2 px-5 font-weight-bold font_20 mt-4 bgHover" style="width:300px !important;">Desk</button><br>
+        <button onclick='sendData(5,"bottles")' class="btn fit_width bg-white borderR_20 shadow_5 py-2 px-5 font-weight-bold font_20 mt-4 bgHover" style="width:300px !important;">Bottles</button><br>
+        <button onclick='sendData(8,"fruitBasket")' class="btn fit_width bg-white borderR_20 shadow_5 py-2 px-5 font-weight-bold font_20 mt-4 bgHover" style="width:300px !important;">Fruit Basket</button>
+    </center>
+    <script src="index.js"></script>
+</body>
+
+</html>

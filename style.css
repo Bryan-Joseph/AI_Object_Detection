@@ -1,0 +1,26 @@
+body{
+    
+    background: linear-gradient(-45deg,rgb(0, 194, 0),rgb(75, 212, 212), rgb(75, 212, 212),blue,purple,red);
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    overflow: hidden;
+
+    animation: bgChange 19s linear 0s infinite;
+}
+.addDelay{
+    animation-delay: 4s;
+}
+
+@keyframes bgChange {
+    0%{background-position: 0% 0%;}
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0% 0%;}    
+}
+
+.bgHover:hover{
+    background-color: rgb(233, 233, 233) !important;
+}
+
+canvas{
+    border: 10px ridge red;
+}
